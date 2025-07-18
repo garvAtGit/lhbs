@@ -1,6 +1,5 @@
 // pages/api/payment-callback.js
 import connectToDatabase from "@/lib/mongodb";
-import Payment from "@/models/Payment";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).send("Method Not Allowed");

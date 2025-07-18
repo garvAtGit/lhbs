@@ -1,7 +1,5 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import connectToDatabase from "@/lib/mongoose";
-import Payment from "@/models/Payment";
+
 
 export default async function AccessPage({ params, searchParams }) {
   const session = await getServerSession(authOptions);

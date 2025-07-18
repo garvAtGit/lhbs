@@ -1,6 +1,5 @@
 // app/payment-success/route.js
-import connectToDatabase from "@/lib/mongodb";
-import Payment from "@/models/Payment";
+
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
