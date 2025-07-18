@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.joinus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.joinustitle {
+  margin: 10px;
+  font-size: 4.6rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.coursedetails {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vw;
+  margin: 1.5rem 0;
+  gap: 2rem;
+  border: 2px solid #000;
+  border-radius: 1vw;
+}
+
+.coursedetails img {
+  max-width: 50%;
+  height: auto;
+  align-self: center;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.coursetitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.coursedescription {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  margin: 1rem 0;
+  width: 20vw;
+  height: 3px;
+  background: linear-gradient(to right, #FD1D1D 0%, #FCB045 50%);
+}
+
+.tick {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.tick li::before {
+  content: '✔ ';
+  color: #FD4728;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.joinusbutton {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #D90707;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 28px;
+  transition: background-color 0.3s ease;
+}
+
+.joinusbutton:hover {
+  background-color: #a40606;
+}
+
+@media (max-width: 900px) {
+  .joinustitle {
+    font-size: 3rem;
+  }
+
+  .coursedetails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coursedetails img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .maep2content,
+  .viptrainingcontent {
+    padding: 1rem;
+  }
+}
