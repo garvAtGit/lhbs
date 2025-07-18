@@ -1,11 +1,5 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div></div>
-  );
-}
-
 import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Component() {
