@@ -11,10 +11,6 @@ const inter = Inter({
   fallback: ['system-ui', 'arial']
 });
 
-export const metadata = {
-  title: "Master Pramod",
-  description: "Learn Martial Arts with Master Pramod",
-};
 
 export default function RootLayout({ children }) {
   return (
