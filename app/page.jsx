@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 
-const Home = (props) => {
+export default function Home(props) {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -143,6 +143,4 @@ const Home = (props) => {
       </div>
     </>
   );
-};
-
-export default Home;
+}
