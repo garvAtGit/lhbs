@@ -19,6 +19,10 @@ body {
   padding: 1rem;
 }
 
+div a{
+  text-decoration: none;
+}
+
 .title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300 !important;

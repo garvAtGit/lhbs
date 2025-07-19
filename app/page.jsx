@@ -39,8 +39,8 @@ export default function Home(props) {
           content="https://ik.imagekit.io/lhbs/MAEP2.0.png?updatedAt=1751458697819"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/" />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <meta property="og:url" content="https://martialartsschool.in/" />
+        <link rel="canonical" href="https://martialartsschool.in/" />
         <link rel="preconnect" href="https://ik.imagekit.io" crossOrigin="true" />
         <link
           rel="preload"
@@ -66,7 +66,8 @@ export default function Home(props) {
                 dimension every day during the class.
               </p>
               <p className="clickeP">
-                <a href="/downloads/MAEP.pdf" aria-label="Download Martial Arts Expert PDF">
+                🎁 Free Gift Included! <br />
+                <a href="https://api.whatsapp.com/send?phone=919713600085&text=Hello%2C%0AInterested%20to%20know%20more%20about%20Martial%20Arts%20Expert%20Program.%20Please%20share%20details%20with%20PDF." aria-label="Download Martial Arts Expert PDF">
                   To get the free PDF, click here
                 </a>
               </p>
@@ -91,7 +92,8 @@ export default function Home(props) {
                 principles. This course requires basic training from the Expert Program.
               </p>
               <p className="clickmP">
-                <a href="/downloads/MAMP.pdf" aria-label="Download Martial Arts Master PDF">
+                🎁 Free Gift Included! <br />
+                <a href="https://api.whatsapp.com/send?phone=919713600085&text=hello%2C%0APlease%20share%20me%20details%20of%20your%20Master%20program" aria-label="Download Martial Arts Master PDF">
                   To get the free PDF, click here
                 </a>
               </p>
@@ -110,8 +112,9 @@ export default function Home(props) {
                 steps. Anyone can start after completing the Expert & Master Programs.
               </p>
               <p className="clickbP">
-                <a href="/downloads/BMP.pdf" aria-label="Download Martial Arts Business PDF">
-                  To get the free PDF, click here
+                🎁 Free Gift Included! <br />
+                <a href="https://api.whatsapp.com/send?phone=919713600085&text=hello%2C%0APlease%20share%20me%20details%20of%20your%20Master%20program" aria-label="Download Martial Arts Business PDF">
+                  To get the free PDF, click heree
                 </a>
               </p>
             </div>
