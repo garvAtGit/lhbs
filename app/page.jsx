@@ -1,7 +1,7 @@
 "use client";
 import "./home.css";
 import "./globals.css";
-import RazorpayButton from "./components/RazorpayButton";
+// import RazorpayButton from "./components/RazorpayButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

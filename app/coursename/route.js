@@ -1,4 +1,3 @@
-import { connectToDatabase } from "../../lib/mongodb";
 import Coursename from "../../models/Coursename";
 import { NextResponse } from "next/server";
 

@@ -1,5 +1,4 @@
 import styles from "./course.module.css";
-import { connectToDatabase } from "../../../lib/mongodb";
 import Coursename from "../../../models/Coursename";
 import RazorpayButton from "../../components/RazorpayButton";
 
