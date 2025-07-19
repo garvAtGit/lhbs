@@ -19,10 +19,9 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
           aria-label="Toggle navigation"
         >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <img src="burger-list-menu-navigation-svgrepo-com.svg" alt="Menu" width="18" height="18" style={{ display: 'block' }} />
         </button>
+        {open && <div className="nav-backdrop" onClick={handleLinkClick} />}
         <ul className={`nav-list${open ? ' active' : ''}`}>
           <li>
             <Link href="/" className="navbutton" id="homebutton" onClick={handleLinkClick}>Home</Link>

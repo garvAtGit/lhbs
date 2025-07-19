@@ -1,3 +1,14 @@
+  .nav-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.18);
+    z-index: 1199;
+    backdrop-filter: blur(1.5px);
+    transition: opacity 0.2s;
+  }
 body {
   background-color: #ffffff;
   margin: 0;
@@ -45,17 +56,22 @@ body {
   display: block;
 }
 
+
 .hamburger {
   display: none;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 30px;
-  
+  justify-content: space-around;  
   background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 1100;
+  padding: 0;
+}
+
+.hamburger img {
+  width: 24px !important;
+  height: 24px !important;
+  display: block;
 }
 
 .nav-list {
@@ -122,33 +138,73 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-  top: 20px;
-    right: 0;
-    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
-    transform: scale(1.2);
-    display: none;
+    background: #ffffff;
+    border-bottom: 2px solid #9e9e9e;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.12);
+    padding: 1.5rem 0 1rem 0;
     margin: 0;
-    padding: 0;
-    z-index: 100;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 1200;
+    display: none;
+    animation: slideDownNav 0.25s cubic-bezier(0.4,0,0.2,1);
   }
   .nav-list.active {
     display: flex;
+    animation: slideDownNav 0.25s cubic-bezier(0.4,0,0.2,1);
   }
+@keyframes slideDownNav {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
   .nav-list li {
     width: 100%;
     margin: 0;
   }
   .navbutton {
-    width: 100vw;
-    /* font-size: 1.3rem; */
-    padding: 1.5rem 0;
+    width: 85vw;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding: 1rem 0;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 16px;
+    margin: 0.4rem 0;
+    background: #faf9f6;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 48px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+  }
+  .navbutton:active, .navbutton:focus {
+    border: 1.5px solid #FC7F37;
+    background: #fff6ee;
+    box-shadow: 0 4px 16px 0 rgba(252,127,55,0.08);
+    outline: none;
   }
   .hamburger {
     display: flex;
     margin: 1rem;
+    padding: 0;
+  }
+  .hamburger img {
+    width: 34px !important;
+    height: 34px !important;
   }
 
 }
