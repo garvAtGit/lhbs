@@ -11,7 +11,7 @@ export default function Home(props) {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
-
+//hello
   return (
     <>
       <Head>
