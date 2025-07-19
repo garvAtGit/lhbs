@@ -1,6 +1,14 @@
 "use client";
 import "./home.css";
 import "./globals.css";
+
+// Google Fonts: Inter, Lato, Roboto, Playfair Display
+import { Inter, Lato, Roboto, Playfair_Display } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
+const lato = Lato({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
+const roboto = Roboto({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
+const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
 // import RazorpayButton from "./components/RazorpayButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,9 +19,10 @@ export default function Home(props) {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
-//hello
+  //hello
+  // Apply all font classes to the root div for maximum coverage
   return (
-    <>
+    <div>
       <Head>
         <title>Martial Arts School | Expert, Master & Business Training Programs</title>
         <meta
@@ -141,6 +150,6 @@ export default function Home(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
