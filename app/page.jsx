@@ -34,6 +34,7 @@ export default function Home(props) {
           property="og:description"
           content="Expert, Master & Business Martial Arts Programs. Culturally diverse styles, animal-inspired techniques, and professional training."
         />
+        <link rel="icon" type="image/svg+xml" href="vercel.svg" />
         <meta
           property="og:image"
           content="https://ik.imagekit.io/lhbs/MAEP2.0.png?updatedAt=1751458697819"
