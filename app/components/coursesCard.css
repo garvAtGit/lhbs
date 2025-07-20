@@ -34,7 +34,8 @@
 
 .courseCardTitle {
   font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: 700;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   text-align: left;
   margin: 0;
 }
@@ -42,6 +43,8 @@
 .courseCardDescription {
   /* font-size: clamp(1rem, 1.2vw, 1.2rem); */
   margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .cards {
@@ -68,7 +71,8 @@
 
 .courses-title {
   /* font-size: clamp(2.5rem, 5vw, 3.375rem); */
-  font-weight: 550;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   text-align: left;
   background: linear-gradient(90deg, #C8295E, #F81F24, #FD5D2F);
   background-clip: border-box;
@@ -83,7 +87,8 @@
   color: rgb(0, 0, 0);
   max-width: 100%;
   margin-top: 1.5vw;
-  font-weight: 500;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   /* font-size: 1.3em; */
 }
 

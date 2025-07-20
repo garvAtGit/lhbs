@@ -5,7 +5,8 @@
 .title-coupons{
     font-size: 1.5rem;
     margin: 2vw;
-    font-weight: 500;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
     text-align: center;
     background: linear-gradient(90deg, #C8295E, #F81F24, #FD5D2F);
     background-clip: border-box;
@@ -28,6 +29,8 @@
     max-width: 20rem;
     background-color: #b30000;
     color: white;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 200;
 }
 
 .titleboxcoupon{

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Inter:wght@200&display=swap');
+
+/* body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+} */
+
+h1, h2, h3, h4, h5, h6, .title, .joinustitle, .courses-title, .courseTitle, .refund-policy-title, .terms-conditions-title {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.coursedescription, .courseDescription, .titlefont, .mattereP, .mattermP, .matterbP, .coursedescription, .description, p, li {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300 ;
+}
 .__className_73da9b{
     margin: 0;
     padding: 0;
