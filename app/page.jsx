@@ -57,6 +57,10 @@ export default function Home(props) {
 
         <div className="programs" data-aos="fade-up">
           <div className="expertProgram">
+            <img
+              src="https://ik.imagekit.io/lhbs/MAEP2.0.png?updatedAt=1751458697819"
+              alt="Martial Arts Expert Program image"
+            />
             <div className="contenteP">
               <h2 className="titleeP">Martial Arts Expert Program</h2>
               <p className="courseseP">12 Courses, 25 Days Each</p>
@@ -73,10 +77,6 @@ export default function Home(props) {
                 </a>
               </p>
             </div>
-            <img
-              src="https://ik.imagekit.io/lhbs/MAEP2.0.png?updatedAt=1751458697819"
-              alt="Martial Arts Expert Program image"
-            />
           </div>
 
           <div className="masterProgram" data-aos="fade-right">
@@ -102,6 +102,10 @@ export default function Home(props) {
           </div>
 
           <div className="businessProgram" data-aos="fade-left">
+            <img
+              src="https://ik.imagekit.io/lhbs/business-program.png?updatedAt=1751533731419"
+              alt="Martial Arts Business Program"
+            />
             <div className="contentbP">
               <h2 className="titlebP">Martial Arts Business Program</h2>
               <p className="coursesbP">3 Courses, 25 Days Each</p>
@@ -119,10 +123,6 @@ export default function Home(props) {
                 </a>
               </p>
             </div>
-            <img
-              src="https://ik.imagekit.io/lhbs/business-program.png?updatedAt=1751533731419"
-              alt="Martial Arts Business Program"
-            />
           </div>
         </div>
 

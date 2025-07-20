@@ -96,9 +96,14 @@
 .useful-link h2,
 .social-links h2,
 .address h2 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   margin-bottom: 1rem;
+  background: linear-gradient(90deg, #C8295E, #F81F24, #FD5D2F);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .useful-link img,
@@ -114,7 +119,9 @@
   background: #82074a;
   color: #fff;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.1rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .copy-right-sec a {

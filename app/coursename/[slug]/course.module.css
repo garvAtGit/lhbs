@@ -10,11 +10,19 @@
 .courseTitle {
   font-size: 2rem;
   margin-bottom: 12px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  background: linear-gradient(90deg, #C8295E, #F81F24, #FD5D2F);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .courseDescription {
-  font-size: 1.1rem;
+  font-size: 1.13rem;
   margin-bottom: 20px;
-  color: #444;
+  color: #222;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 .coursePrice {
   font-size: 1.3rem;
@@ -22,15 +30,20 @@
   margin-bottom: 24px;
 }
 .payButton {
-  background: #3399cc;
+  background: linear-gradient(90deg, #D6264D 0%, #FC7F37 100%);
   color: #fff;
   border: none;
-  padding: 14px 32px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.2s;
+  padding: 13px 32px;
+  border-radius: 32px;
+  font-size: 1.13rem;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  box-shadow: 0 2px 8px 0 rgba(252,127,55,0.08);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  margin-top: 0.7rem;
 }
 .payButton:hover {
-  background: #287ca6;
+  background: linear-gradient(90deg, #FC7F37 0%, #D6264D 100%);
+  box-shadow: 0 4px 16px 0 rgba(252,127,55,0.14);
+  transform: translateY(-2px) scale(1.03);
 }
