@@ -178,11 +178,18 @@ div a{
   .masterProgram,
   .businessProgram {
     flex-direction: column;
+
   }
 
   .whatWeTrain {
     flex-direction: column;
   }
+
+  .contenteP,
+.contentmP,
+.contentbP {
+  padding: 0rem;
+}
 
 .expertProgram img,
 .masterProgram img,
