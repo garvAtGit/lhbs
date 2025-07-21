@@ -38,7 +38,7 @@ export default function CheckoutPage() {
     if (Object.values(errors).some(Boolean)) {
       return;
     }
-    const res = await fetch("https://db19c33bbc97.ngrok-free.app/pay", {
+    const res = await fetch("/api/pay", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

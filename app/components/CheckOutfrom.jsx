@@ -18,10 +18,13 @@ export default function CheckoutForm({ amount }) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
+  const getBackendUrl = () => '/api/pay';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://<your-ngrok-subdomain>.ngrok-free.app/pay", {
+      const res = await fetch(getBackendUrl(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -31,9 +34,17 @@ export default function CheckoutForm({ amount }) {
         })
       });
 
+      if (!res.ok) {
+        throw new Error('Payment server error');
+      }
+
       const html = await res.text();
       const paymentWin = window.open();
-      paymentWin.document.write(html);
+      if (paymentWin) {
+        paymentWin.document.write(html);
+      } else {
+        alert("Please allow popups to complete payment.");
+      }
     } catch (err) {
       alert("❌ Something went wrong. Please try again.");
       console.error("Error:", err);

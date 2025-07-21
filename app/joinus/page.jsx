@@ -54,7 +54,7 @@ const JoinUs = () => {
             </ul>
             <a
               className="joinusbutton"
-              href="http://localhost:3002/pay?amount=236000"
+              href="/checkout/maep2.0?amount=236000"
               aria-label="Join Martial Arts Expert Program for ₹2,36,000"
             >
               Join Now
@@ -88,7 +88,7 @@ const JoinUs = () => {
             </ul>
             <a
               className="joinusbutton"
-              href="http://localhost:3002/pay?amount=236000"
+              href="/checkout/vip-training?amount=236000"
               aria-label="Join VIP Training Program for ₹2,36,000"
             >
               Join Now

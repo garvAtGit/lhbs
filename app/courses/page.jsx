@@ -26,7 +26,7 @@ const Courses = () => {
         </div>
       </div>
       <div className="cards">
-        <CoursesCard title="Muay Thai" description="Learn one of the world’s deadliest martial arts to protect yourself with confidence and precision." link="coursename/muaythai" img="https://ik.imagekit.io/lhbs/muay-thai.png?updatedAt=1751458719255" amount="10"/>
+        <CoursesCard title="Muay Thai" description="Learn one of the world’s deadliest martial arts to protect yourself with confidence and precision." link="coursename/muaythai" img="https://ik.imagekit.io/lhbs/muay-thai.png?updatedAt=1751458719255" amount="47000"/>
         <CoursesCard title="Kung-fu" description="Master traditional Kung-fu techniques, tricks, and styles from Bharat’s top coach—right from your phone." link="coursename/kungfu" img="https://ik.imagekit.io/lhbs/kung-fu.png?updatedAt=1751458720326" amount="47000"/>
         <CoursesCard title="Krav Maga" description="Train in real-life combat techniques to fight off attackers using proven science and psychology." link="coursename/kravmaga" img="https://ik.imagekit.io/lhbs/krav-maga.png?updatedAt=1751458718291" amount="47000"/>
         <CoursesCard title="Capoeira" description="Blend rhythm, movement, and defense with this dynamic Brazilian martial art—taught step by step." link="coursename/capoeira" img="https://ik.imagekit.io/lhbs/capoeira.png?updatedAt=1751458719046" amount="47000"/>
