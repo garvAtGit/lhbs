@@ -112,7 +112,7 @@ const Footer = () => {
                             <div data-aos="fade-right">
                                 <ul className="address-links">
                                     <li>Indore, Madhya Pradesh, Bharat (452018)</li>
-                                    <li>✉: contact@masterpramod.com</li>
+                                    <li>✉: livehealthybesafe@gmail.com</li>
                                     <li>☏: +91 9713600085</li>
                                 </ul>
                             </div>
