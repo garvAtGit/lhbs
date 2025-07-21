@@ -33,7 +33,6 @@ const Coupons = () => {
         <a className="coupon-links" href="https://api.whatsapp.com/send?phone=919713600085&text=Please%20book%20my%20one%20slot%20for%20a%20coffee%20with%20Pramod%20Goswami%20(ninjapramod)%20sir%0ACode%20is%20..........">A coffee with NinjaPramod sir</a>
         <a className="coupon-links" href="https://api.whatsapp.com/send?phone=919713600085&text=I%20am%20interested%20to%20become%20a%20Great%20Martial%20Arts%20Expert%20and%20want%20to%20build%20my%20career%20in%20this%20field%2C%20please%20guide%20me%20to%20get%20maximum%20discount%20for%20one%20year%20diploma%20program%0Amy%20Coupon%20Code%20Is%20............">Maximum Discount for Martial Arts Diploma</a>
       </div>
-      <button onClick={handleClick} className={manrope.className}>You clicked me {count} times.</button>
     </div>
   );
 };
