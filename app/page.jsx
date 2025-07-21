@@ -2,13 +2,8 @@
 import "./home.css";
 import "./globals.css";
 
-// Google Fonts: Inter, Lato, Roboto, Playfair Display
-import { Inter, Lato, Roboto, Playfair_Display } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
-const lato = Lato({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
-const roboto = Roboto({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
-const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', weight: ['400', '700'] });
+import { Cinzel } from 'next/font/google';
+const cinzel = Cinzel({ subsets: ['latin'], weight: '500', display: 'swap' });
 // import RazorpayButton from "./components/RazorpayButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,7 +46,7 @@ export default function Home(props) {
       </Head>
 
       <div className="universal">
-        <h1 className="title" data-aos="zoom-in">
+        <h1 className={`title ${cinzel.className}`} data-aos="zoom-in">
           Martial Arts School
         </h1>
 
@@ -62,7 +57,7 @@ export default function Home(props) {
               alt="Martial Arts Expert Program image"
             />
             <div className="contenteP">
-              <h2 className="titleeP">Martial Arts Expert Program</h2>
+              <h2 className={`titleeP ${cinzel.className}`}>Martial Arts Expert Program</h2>
               <p className="courseseP">12 Courses, 25 Days Each</p>
               <p className="mattereP">
                 Martial arts expert Program is a professional course to become an Expert of Martial
@@ -85,7 +80,7 @@ export default function Home(props) {
               alt="Martial Arts Master Program illustration"
             />
             <div className="contenteP">
-              <h2 className="titlemP">Martial Arts Master Program</h2>
+              <h2 className={`titlemP ${cinzel.className}`}>Martial Arts Master Program</h2>
               <p className="coursesmP">18 Courses, 25 Days Each</p>
               <p className="mattermP">
                 Martial Arts Master Program is the best course ever to become a Master of Martial
@@ -107,7 +102,7 @@ export default function Home(props) {
               alt="Martial Arts Business Program"
             />
             <div className="contentbP">
-              <h2 className="titlebP">Martial Arts Business Program</h2>
+              <h2 className={`titlebP ${cinzel.className}`}>Martial Arts Business Program</h2>
               <p className="coursesbP">3 Courses, 25 Days Each</p>
               <p className="matterbP">
                 We help you start your own Martial Arts School by building your skills, knowledge,
@@ -126,7 +121,7 @@ export default function Home(props) {
           </div>
         </div>
 
-        <h2 className="titleWhatWeTrain" data-aos="zoom-in">
+        <h2 className={`titleWhatWeTrain ${cinzel.className}`} data-aos="zoom-in">
           What We Train
         </h2>
 

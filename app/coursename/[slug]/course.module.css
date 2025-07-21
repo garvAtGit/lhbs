@@ -10,7 +10,7 @@
 .courseTitle {
   font-size: 2rem;
   margin-bottom: 12px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
   font-weight: 300;
   background: linear-gradient(90deg, #C8295E, #F81F24, #FD5D2F);
   background-clip: border-box;
@@ -21,7 +21,7 @@
   font-size: 1.13rem;
   margin-bottom: 20px;
   color: #222;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'manrope', Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 .coursePrice {
@@ -36,7 +36,7 @@
   padding: 13px 32px;
   border-radius: 32px;
   font-size: 1.13rem;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'manrope', Arial, Helvetica, sans-serif;
   font-weight: 300;
   box-shadow: 0 2px 8px 0 rgba(252,127,55,0.08);
   transition: background 0.2s, box-shadow 0.2s, transform 0.1s;

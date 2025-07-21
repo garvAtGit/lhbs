@@ -11,7 +11,7 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    /* font-family removed: use next/font/google className on element */
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
 }
 
 .buttons{

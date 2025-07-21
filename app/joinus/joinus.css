@@ -20,6 +20,7 @@ body {
   font-weight: 300;
   background: linear-gradient(90deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
   background-clip: text;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -55,13 +56,16 @@ body {
   margin: 0 auto;
   box-shadow: 0 2px 16px 0 rgba(253,29,29,0.07);
   background: #f7f7f7;
+
+}
+
 .joinusbutton {
   display: inline-block;
   padding: 13px 32px;
   background: linear-gradient(90deg, #D6264D 0%, #FC7F37 100%);
   color: #fff;
   font-size: 1.13rem;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
   font-weight: 300;
   border: none;
   border-radius: 32px;
@@ -74,11 +78,11 @@ body {
   box-shadow: 0 4px 16px 0 rgba(252,127,55,0.14);
   transform: translateY(-2px) scale(1.03);
 }
-}
+
 
 .coursetitle {
   font-size: 2.2rem;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
   font-weight: 300;
   margin-bottom: 0.5rem;
   letter-spacing: 0.01em;
@@ -86,7 +90,7 @@ body {
 
 .coursedescription {
   font-size: 1.15rem;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'manrope', Arial, Helvetica, sans-serif;
   font-weight: 200;
   margin-bottom: 1rem;
   color: #222;
@@ -110,14 +114,12 @@ body {
   content: '✔ ';
   color: #FD4728;
 }
-
 a {
   text-decoration: none;
 }
 
 .joinusbutton {
   display: inline-block;
-  padding: 10px 16px;
   background-color: #D90707;
   color: #ffffff;
   font-size: 1.1rem;
@@ -129,7 +131,6 @@ a {
 .joinusbutton:hover {
   background-color: #a40606;
 }
-
 @media (max-width: 900px) {
   .joinustitle {
     font-size: 3rem;
