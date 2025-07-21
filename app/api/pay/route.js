@@ -4,55 +4,59 @@ export async function POST(req) {
   try {
     const body = await req.json();
     // Destructure required fields
-    const { amount, mobileNumber, name, email, address, slug, phone, ...rest } = body;
+    const { amount, mobileNumber, name, email, address, ...rest } = body;
 
-    // Instamojo expects amount as string, and purpose is required
-    const payload = {
-      amount: String(amount),
-      purpose: slug ? `Course: ${slug}` : "Martial Arts Course",
+    // Debug: Log env and payload
+    console.log('INSTAMOJO_API_KEY:', process.env.INSTAMOJO_API_KEY);
+    console.log('INSTAMOJO_AUTH_TOKEN:', process.env.INSTAMOJO_AUTH_TOKEN);
+    console.log('Instamojo payload:', JSON.stringify({
+      amount,
       buyer_name: name,
       email,
-      phone: mobileNumber || phone,
-      redirect_url: process.env.INSTAMOJO_REDIRECT_URL || "https://martialartsschool.in/thank-you",
-      send_email: true,
-      send_sms: true,
-      allow_repeated_payments: false,
+      phone: mobileNumber || rest.phone,
+      purpose: rest.slug || "Martial Arts Course",
+      redirect_url: `https://martialartsschool.in/payment-success?course=${encodeURIComponent(rest.slug || "Martial Arts Course")}`,
+      ...rest,
+    }, null, 2));
+
+    const payload = {
+      amount,
+      buyer_name: name,
+      email,
+      phone: mobileNumber || rest.phone,
+      purpose: rest.slug || "Martial Arts Course",
+      // Always use the correct redirect URL and pass course slug for access page
+      redirect_url: `https://martialartsschool.in/payment-success?course=${encodeURIComponent(rest.slug || "Martial Arts Course")}`,
       ...rest,
     };
 
-    // Debug log for troubleshooting
-    console.log("Instamojo payload:", payload);
-    console.log("API KEY:", process.env.INSTAMOJO_API_KEY);
-    console.log("AUTH TOKEN:", process.env.INSTAMOJO_AUTH_TOKEN);
-    console.log("REDIRECT URL:", payload.redirect_url);
-
-    // Call Instamojo API
-    const response = await axios.post(
-      "https://api.instamojo.com/v2/payment_requests/",
-      payload,
-      {
-        headers: {
-          "X-Api-Key": process.env.INSTAMOJO_API_KEY,
-          "X-Auth-Token": process.env.INSTAMOJO_AUTH_TOKEN,
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    let response;
+    try {
+      response = await axios.post(
+        "https://www.instamojo.com/api/1.1/payment-requests/",
+        payload,
+        {
+          headers: {
+            "X-Api-Key": process.env.INSTAMOJO_API_KEY,
+            "X-Auth-Token": process.env.INSTAMOJO_AUTH_TOKEN,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log('Instamojo response:', JSON.stringify(response.data, null, 2));
+    } catch (apiErr) {
+      console.error('❌ Instamojo API error:', apiErr.response?.data || apiErr.message);
+      return Response.json({ success: false, message: apiErr.response?.data?.message || apiErr.message || 'Instamojo API error' }, { status: 500 });
+    }
 
     if (response.data && response.data.payment_request && response.data.payment_request.longurl) {
       return Response.json({ success: true, redirectUrl: response.data.payment_request.longurl });
     } else {
-      // Log full response for debugging
-      console.error("Instamojo response:", response.data);
-      return Response.json({ success: false, message: "Failed to create payment request." }, { status: 500 });
+      // Try to show Instamojo error message if available
+      const msg = response.data && response.data.message ? response.data.message : "Failed to create payment request.";
+      return Response.json({ success: false, message: msg }, { status: 500 });
     }
   } catch (err) {
-    // Log error details for debugging
-    if (err.response) {
-      console.error("Instamojo error response:", err.response.data);
-      return Response.json({ success: false, message: err.response.data.message || "Payment error" }, { status: 500 });
-    }
-    console.error("Instamojo error:", err.message);
     return Response.json({ success: false, message: err.message || "Payment error" }, { status: 500 });
   }
 }
