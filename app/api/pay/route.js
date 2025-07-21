@@ -13,7 +13,8 @@ export async function POST(req) {
       email,
       phone: mobileNumber || rest.phone,
       purpose: rest.slug || "Martial Arts Course",
-      redirect_url: process.env.INSTAMOJO_REDIRECT_URL || "https://martialartsschool.in/thank-you",
+      // Always use the correct redirect URL and pass course slug for access page
+      redirect_url: `https://martialartsschool.in/payment-success?course=${encodeURIComponent(rest.slug || "Martial Arts Course")}`,
       ...rest,
     };
 
